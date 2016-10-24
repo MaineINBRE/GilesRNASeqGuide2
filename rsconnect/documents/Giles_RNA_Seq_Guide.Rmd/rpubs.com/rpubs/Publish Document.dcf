@@ -1,0 +1,7 @@
+name: Publish Document
+account: rpubs
+server: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/219675/a200de6d36824911ba953eb4cf0360f9
+bundleId: https://api.rpubs.com/api/v1/document/219675/a200de6d36824911ba953eb4cf0360f9
+url: http://rpubs.com/kylescotshank/219675/edit
+when: 1476989211.88827
