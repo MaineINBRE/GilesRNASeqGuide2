@@ -1,5 +1,5 @@
 
-# Using Galaxy to Perform Basic RNA-Seq Analysis
+# RNA-seq Analysis with Galaxy - Aligning Reads to a Bacteriophage Genome
 
 The objective of this tutorial is to align a set of RNA-seq reads from the *Mycobacterium* phage Giles to its genome and perform a basic analysis (i.e., obtain a table of counts).
 

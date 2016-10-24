@@ -1,5 +1,5 @@
 ---
-title: "RNA-seq Analysis with Galaxy - Aligning Giles RNA Reads"
+title: "RNA-seq Analysis with Galaxy - Aligning Reads to a Bacteriophage Genomes"
 author: "| Benjamin King, PhD | bking@mdibl.org | Kyle Shank | kshank@mdibl.org |
   \n"
 output:
