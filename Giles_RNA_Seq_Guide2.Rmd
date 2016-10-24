@@ -21,7 +21,7 @@ knitr::opts_chunk$set(fig.align='center')
 
 Align a set of RNA-seq reads from the *Mycobacterium* phage Giles and perform a basic analysis.
 
-The overall process will be very similar to the [this guide](http://rpubs.com/kylescotshank/216067)), which shows how to align the RNA-seq reads from the phage to its host's genome. The basic steps are as follows: 
+The overall process will be very similar to the [this guide](http://rpubs.com/kylescotshank/216067), which shows how to align the RNA-seq reads from the phage to its host's genome. The basic steps are as follows: 
 
   1. Import the reference genome and reference genome annotation.
   2. Import the RNA-seq reads.

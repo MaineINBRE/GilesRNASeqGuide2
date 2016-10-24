@@ -1,9 +1,9 @@
 
-# Objective
+# Using Galaxy to Perform Basic RNA-Seq Analysis
 
-Align a set of RNA-seq reads from the *Mycobacterium* phage Giles and perform a basic analysis.
+The objective of this tutorial is to align a set of RNA-seq reads from the *Mycobacterium* phage Giles to its genome and perform a basic analysis (i.e., obtain a table of counts).
 
-The overall process will be very similar to the [this guide](http://rpubs.com/kylescotshank/216067)), which shows how to align the RNA-seq reads from the phage to its host's genome. The basic steps are as follows: 
+The overall process will be very similar to the [this guide](http://rpubs.com/kylescotshank/216067), which shows how to align the RNA-seq reads from the phage to its host's genome. The basic steps are as follows: 
 
   1. Import the reference genome and reference genome annotation.
   2. Import the RNA-seq reads.
@@ -13,7 +13,7 @@ The overall process will be very similar to the [this guide](http://rpubs.com/ky
 
 ***
 
-# Step 1: Import your Genome Information
+## Step 1: Import your Genome Information
 
 In this step, we're going to download the genome assembly (a [FASTA](http://zhanglab.ccmb.med.umich.edu/FASTA/) file) and the annotation (a [gff](http://useast.ensembl.org/info/website/upload/gff.html) file) onto our local machine from [EnsemblBacteria](http://bacteria.ensembl.org/index.html).
 
@@ -55,7 +55,7 @@ Drag and drop both files that you wish to upload. Under `Type`, make sure to cha
 Click __close__. You can now see in your history bar (on the right) that you've successfully uploaded both files. Note that each item in your history equates to a "step" in your workflow - and each step is assigned a number in ascending order. This will be helpful downstream, as you will refer *back* to numeric steps in your workflow to feed data into the pipeline. 
 ***
 
-# Step 2: Import RNA-seq Reads. 
+## Step 2: Import RNA-seq Reads. 
 
 The reads for the Giles RNA-Seq study were initially deposited in the [NCBI Short Read Archive](https://www.ncbi.nlm.nih.gov/sra).  The [European Nucleotide Archive (ENA)](http://www.ebi.ac.uk/ena) has mirrored those data and has made it easy to upload the [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format) files into Galaxy.  
 
@@ -95,7 +95,7 @@ This will add the file (as a pending job) to your history on the right. Not that
 
 ***
 
-# Step 3: Perform QC 
+## Step 3: Perform QC 
 
 ***
 
@@ -134,7 +134,7 @@ You will see two new additions to your history bar: a FastQC "RawData" file, and
 
 ***
 
-# Step 4: Map to the Genome
+## Step 4: Map to the Genome
 
 Mapping refers to the process of aligning short reads to a reference sequence, whether the reference is a complete genome, transcriptome, or de novo assembly. There are numerous programs that have been developed to map reads to a reference sequence that vary in their algorithms and therefore speed. The program that we utilize in this pipeline is called `bowtie`. More information available [here](http://bowtie-bio.sourceforge.net/index.shtml)
 
@@ -158,7 +158,7 @@ Repeat this step for the remaining two `FASTQ` files. Note that your output file
 
 ***
 
-# Step 5: Generate Counts per Read
+## Step 5: Generate Counts per Read
 
 To perform differential analysis, it's necessary to be able to calculate the number of reads mapping to each feature. Here, we think of a feature as an interval (i.e., a range of positions) on a chromosome or a union of such intervals. In the case of RNA-Seq, the features are typically genes, where each gene is considered here as the union of all its exons. One may also consider each exon as a feature, e.g., in order to check for alternative splicing. 
 
