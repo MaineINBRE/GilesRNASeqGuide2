@@ -178,4 +178,6 @@ In the first input ("Aligned SAM/BAM file"), select one of the `SAM` files gener
 
 ![](Galaxy_RunHTSeq.tiff)
 
+When you've completed the above for all of your samples, don't forget to download the output files (which will be `.txt` files) to your local machine for downstream analysis!
+
 ***
