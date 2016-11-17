@@ -11,6 +11,8 @@ The overall process will be very similar to the [this guide](http://rpubs.com/ky
   4. Align the RNA-seq reads to the reference genome.
   5. Generate a count of reads per gene that can be analyzed downstream with `R`.
 
+__If you'd like to be able to see the output of the commands below in `R`, please follow the link above to the RPubs page.__
+
 ***
 
 ## Step 1: Import your Genome Information
@@ -177,5 +179,7 @@ From the toolbar, click __NGS: RNA Analysis__. Then click __htseq-count__.
 In the first input ("Aligned SAM/BAM file"), select one of the `SAM` files generated from `bowtie`. Then, make sure your `gtf` file is in the second input ("GFF File"). Leave the rest of the parameters as they are. Click __Execute__.
 
 ![](Galaxy_RunHTSeq.tiff)
+
+When you've completed the above for all of your samples, don't forget to download the output files (which will be `.txt` files) to your local machine for downstream analysis!
 
 ***
